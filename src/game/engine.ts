@@ -96,31 +96,31 @@ const CLIMATE_DECK: ClimateEvent[] = [
     id: 'thermal',
     title: 'Thermal Inversion',
     effect: 'Deflect is disabled this round. Warm air traps pollution near the ground — fans cannot push upward.',
-    image: '/assets/climates/thermal.jpg',
+    image: './assets/climates/thermal.jpg',
   },
   {
     id: 'humidity',
     title: 'High Humidity',
     effect: 'CARBON filters are inactive this round. Moisture fills their pores, blocking gas adsorption.',
-    image: '/assets/climates/humidity.jpg',
+    image: './assets/climates/humidity.jpg',
   },
   {
     id: 'wildfire',
     title: 'Wildfire Surge',
     effect: 'Emission this round adds +1 PM2.5 (Smoke) and +1 PM10 (Ash). Biomass combustion floods the air with fine and coarse particles.',
-    image: '/assets/climates/wildfire.jpg',
+    image: './assets/climates/wildfire.jpg',
   },
   {
     id: 'drizzle',
     title: 'Drizzle',
     effect: 'Remove 1 PM10 token from each district immediately. Wet deposition washes out coarse particles.',
-    image: '/assets/climates/drizzle.jpg',
+    image: './assets/climates/drizzle.jpg',
   },
   {
     id: 'accident',
     title: 'Industrial Accident',
     effect: 'Immediately push 2 Gas tokens onto 2 adjacent Core lanes. Ruptured pipeline releases toxic fumes.',
-    image: '/assets/climates/accident.jpg',
+    image: './assets/climates/accident.jpg',
   },
 ];
 
@@ -357,7 +357,7 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         id: `emission-${newState.round}`,
         title: `Emission Wave ${newState.round} [Card ${cardStr}]`,
         tokens,
-        image: `/assets/emissions/tier${newState.tier}.jpg`
+        image: `./assets/emissions/tier${newState.tier}.jpg`
       };
       
       return newState;

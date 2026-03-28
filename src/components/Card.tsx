@@ -57,31 +57,31 @@ const FILTER_INFO: Record<FilterType, { icon: any; desc: string; catchLabel: str
     icon: Shield,
     desc: 'Mechanical mesh traps large particles by physical size exclusion.',
     catchLabel: 'PM10 only',
-    image: '/assets/filters/mesh.jpg',
+    image: './assets/filters/mesh.jpg',
   },
   CARBON: {
     icon: Droplets,
     desc: 'Activated carbon adsorbs toxic gases. Disabled in High Humidity — moisture fills all pores.',
     catchLabel: 'GAS only',
-    image: '/assets/filters/carbon.jpg',
+    image: './assets/filters/carbon.jpg',
   },
   HEPA: {
     icon: Wind,
     desc: 'Dense fibre mat captures fine and coarse particles ≥0.3 µm. 99.97% efficient.',
     catchLabel: 'PM2.5 + PM10',
-    image: '/assets/filters/hepa.jpg',
+    image: './assets/filters/hepa.jpg',
   },
   ELECTROSTATIC: {
     icon: Zap,
     desc: 'High-voltage corona ionises particles; collector plates attract all charged PM.',
     catchLabel: 'PM10 + PM2.5',
-    image: '/assets/filters/electrostatic.jpg',
+    image: './assets/filters/electrostatic.jpg',
   },
   SCRUBBER: {
     icon: Droplets,
     desc: 'Alkaline spray neutralises SO₂ and NO₂ via acid-base reaction; washes out PM10.',
     catchLabel: 'GAS + PM10',
-    image: '/assets/filters/scrubber.jpg',
+    image: './assets/filters/scrubber.jpg',
   },
 };
 
